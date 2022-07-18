@@ -52,6 +52,9 @@ html, body {
 .feature-article .title:hover {
     color:  rgb(10, 10, 109);
 }
+.new-div {
+    margin-right: 20px;
+}
 .newsimg {
     width: 100rem;
     height: 30rem;
@@ -94,6 +97,20 @@ html, body {
     display: flex;
     justify-self: stretch;
     justify-content: space-between;
+   
+}
+.animate {
+    width: 200%;
+    animation: marquee 20s linear infinite;
+    top: 100%;
+}
+.animate:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0% { left: 0%;}
+    100% { left: -100%; }
 }
 
 
@@ -407,6 +424,8 @@ text-transform: uppercase;
 	}
 
 }
+
+
 
 
 
